@@ -1,0 +1,665 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E57330FB1B07519C0048D8CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E57330FA1B07519C0048D8CF /* main.m */; };
+		E57330FE1B07519C0048D8CF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E57330FD1B07519C0048D8CF /* AppDelegate.m */; };
+		E57331041B07519C0048D8CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E57331021B07519C0048D8CF /* Main.storyboard */; };
+		E57331061B07519C0048D8CF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E57331051B07519C0048D8CF /* Images.xcassets */; };
+		E57331091B07519C0048D8CF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E57331071B07519C0048D8CF /* LaunchScreen.xib */; };
+		E57331151B07519C0048D8CF /* CannonBallTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E57331141B07519C0048D8CF /* CannonBallTests.m */; };
+		E573312B1B075E1D0048D8CF /* CBCannonBall.m in Sources */ = {isa = PBXBuildFile; fileRef = E573312A1B075E1D0048D8CF /* CBCannonBall.m */; };
+		E57331621B07617E0048D8CF /* chipmunk.c in Sources */ = {isa = PBXBuildFile; fileRef = E57331341B07617E0048D8CF /* chipmunk.c */; };
+		E57331631B07617E0048D8CF /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = E573313A1B07617E0048D8CF /* CMakeLists.txt */; };
+		E57331641B07617E0048D8CF /* cpArbiter.c in Sources */ = {isa = PBXBuildFile; fileRef = E57331481B07617E0048D8CF /* cpArbiter.c */; };
+		E57331651B07617E0048D8CF /* cpArray.c in Sources */ = {isa = PBXBuildFile; fileRef = E573314A1B07617E0048D8CF /* cpArray.c */; };
+		E57331661B07617E0048D8CF /* cpBB.c in Sources */ = {isa = PBXBuildFile; fileRef = E573314B1B07617E0048D8CF /* cpBB.c */; };
+		E57331671B07617E0048D8CF /* cpBBTree.c in Sources */ = {isa = PBXBuildFile; fileRef = E573314D1B07617E0048D8CF /* cpBBTree.c */; };
+		E57331681B07617E0048D8CF /* cpBody.c in Sources */ = {isa = PBXBuildFile; fileRef = E573314E1B07617E0048D8CF /* cpBody.c */; };
+		E57331691B07617E0048D8CF /* cpCollision.c in Sources */ = {isa = PBXBuildFile; fileRef = E57331501B07617E0048D8CF /* cpCollision.c */; };
+		E573316A1B07617E0048D8CF /* cpHashSet.c in Sources */ = {isa = PBXBuildFile; fileRef = E57331511B07617E0048D8CF /* cpHashSet.c */; };
+		E573316B1B07617E0048D8CF /* cpPolyShape.c in Sources */ = {isa = PBXBuildFile; fileRef = E57331521B07617E0048D8CF /* cpPolyShape.c */; };
+		E573316C1B07617E0048D8CF /* cpShape.c in Sources */ = {isa = PBXBuildFile; fileRef = E57331541B07617E0048D8CF /* cpShape.c */; };
+		E573316D1B07617E0048D8CF /* cpSpace.c in Sources */ = {isa = PBXBuildFile; fileRef = E57331561B07617E0048D8CF /* cpSpace.c */; };
+		E573316E1B07617E0048D8CF /* cpSpaceComponent.c in Sources */ = {isa = PBXBuildFile; fileRef = E57331581B07617E0048D8CF /* cpSpaceComponent.c */; };
+		E573316F1B07617E0048D8CF /* cpSpaceHash.c in Sources */ = {isa = PBXBuildFile; fileRef = E57331591B07617E0048D8CF /* cpSpaceHash.c */; };
+		E57331701B07617E0048D8CF /* cpSpaceQuery.c in Sources */ = {isa = PBXBuildFile; fileRef = E573315A1B07617E0048D8CF /* cpSpaceQuery.c */; };
+		E57331711B07617E0048D8CF /* cpSpaceStep.c in Sources */ = {isa = PBXBuildFile; fileRef = E573315B1B07617E0048D8CF /* cpSpaceStep.c */; };
+		E57331721B07617E0048D8CF /* cpSpatialIndex.c in Sources */ = {isa = PBXBuildFile; fileRef = E573315C1B07617E0048D8CF /* cpSpatialIndex.c */; };
+		E57331731B07617E0048D8CF /* cpSweep1D.c in Sources */ = {isa = PBXBuildFile; fileRef = E573315E1B07617E0048D8CF /* cpSweep1D.c */; };
+		E57331741B07617E0048D8CF /* cpVect.c in Sources */ = {isa = PBXBuildFile; fileRef = E573315F1B07617E0048D8CF /* cpVect.c */; };
+		E573317B1B0778BF0048D8CF /* CBCannonBallController.m in Sources */ = {isa = PBXBuildFile; fileRef = E573317A1B0778BF0048D8CF /* CBCannonBallController.m */; };
+		E573317E1B0778D70048D8CF /* CBCannonBallView.m in Sources */ = {isa = PBXBuildFile; fileRef = E573317D1B0778D70048D8CF /* CBCannonBallView.m */; };
+		E57331821B09C8570048D8CF /* CBOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = E57331811B09C8570048D8CF /* CBOverlayView.m */; };
+		E57331881B0A404F0048D8CF /* CBPhysicalSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = E57331871B0A404F0048D8CF /* CBPhysicalSpace.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E573310F1B07519C0048D8CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E57330ED1B07519C0048D8CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E57330F41B07519C0048D8CF;
+			remoteInfo = CannonBall;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E57330F51B07519C0048D8CF /* CannonBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CannonBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E57330F91B07519C0048D8CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E57330FA1B07519C0048D8CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E57330FC1B07519C0048D8CF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E57330FD1B07519C0048D8CF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E57331031B07519C0048D8CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E57331051B07519C0048D8CF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E57331081B07519C0048D8CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		E573310E1B07519C0048D8CF /* CannonBallTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CannonBallTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E57331131B07519C0048D8CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E57331141B07519C0048D8CF /* CannonBallTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CannonBallTests.m; sourceTree = "<group>"; };
+		E57331291B075E1D0048D8CF /* CBCannonBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBCannonBall.h; sourceTree = "<group>"; };
+		E573312A1B075E1D0048D8CF /* CBCannonBall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBCannonBall.m; sourceTree = "<group>"; };
+		E57331341B07617E0048D8CF /* chipmunk.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = chipmunk.c; sourceTree = "<group>"; };
+		E57331351B07617E0048D8CF /* chipmunk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chipmunk.h; sourceTree = "<group>"; };
+		E57331361B07617E0048D8CF /* chipmunk_ffi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chipmunk_ffi.h; sourceTree = "<group>"; };
+		E57331371B07617E0048D8CF /* chipmunk_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chipmunk_private.h; sourceTree = "<group>"; };
+		E57331381B07617E0048D8CF /* chipmunk_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chipmunk_types.h; sourceTree = "<group>"; };
+		E57331391B07617E0048D8CF /* chipmunk_unsafe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chipmunk_unsafe.h; sourceTree = "<group>"; };
+		E573313A1B07617E0048D8CF /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		E573313C1B07617E0048D8CF /* cpConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cpConstraint.h; sourceTree = "<group>"; };
+		E573313D1B07617E0048D8CF /* cpDampedRotarySpring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cpDampedRotarySpring.h; sourceTree = "<group>"; };
+		E573313E1B07617E0048D8CF /* cpDampedSpring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cpDampedSpring.h; sourceTree = "<group>"; };
+		E573313F1B07617E0048D8CF /* cpGearJoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cpGearJoint.h; sourceTree = "<group>"; };
+		E57331401B07617E0048D8CF /* cpGrooveJoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cpGrooveJoint.h; sourceTree = "<group>"; };
+		E57331411B07617E0048D8CF /* cpPinJoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cpPinJoint.h; sourceTree = "<group>"; };
+		E57331421B07617E0048D8CF /* cpPivotJoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cpPivotJoint.h; sourceTree = "<group>"; };
+		E57331431B07617E0048D8CF /* cpRatchetJoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cpRatchetJoint.h; sourceTree = "<group>"; };
+		E57331441B07617E0048D8CF /* cpRotaryLimitJoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cpRotaryLimitJoint.h; sourceTree = "<group>"; };
+		E57331451B07617E0048D8CF /* cpSimpleMotor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cpSimpleMotor.h; sourceTree = "<group>"; };
+		E57331461B07617E0048D8CF /* cpSlideJoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cpSlideJoint.h; sourceTree = "<group>"; };
+		E57331471B07617E0048D8CF /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
+		E57331481B07617E0048D8CF /* cpArbiter.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cpArbiter.c; sourceTree = "<group>"; };
+		E57331491B07617E0048D8CF /* cpArbiter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cpArbiter.h; sourceTree = "<group>"; };
+		E573314A1B07617E0048D8CF /* cpArray.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cpArray.c; sourceTree = "<group>"; };
+		E573314B1B07617E0048D8CF /* cpBB.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cpBB.c; sourceTree = "<group>"; };
+		E573314C1B07617E0048D8CF /* cpBB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cpBB.h; sourceTree = "<group>"; };
+		E573314D1B07617E0048D8CF /* cpBBTree.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cpBBTree.c; sourceTree = "<group>"; };
+		E573314E1B07617E0048D8CF /* cpBody.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cpBody.c; sourceTree = "<group>"; };
+		E573314F1B07617E0048D8CF /* cpBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cpBody.h; sourceTree = "<group>"; };
+		E57331501B07617E0048D8CF /* cpCollision.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cpCollision.c; sourceTree = "<group>"; };
+		E57331511B07617E0048D8CF /* cpHashSet.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cpHashSet.c; sourceTree = "<group>"; };
+		E57331521B07617E0048D8CF /* cpPolyShape.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cpPolyShape.c; sourceTree = "<group>"; };
+		E57331531B07617E0048D8CF /* cpPolyShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cpPolyShape.h; sourceTree = "<group>"; };
+		E57331541B07617E0048D8CF /* cpShape.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cpShape.c; sourceTree = "<group>"; };
+		E57331551B07617E0048D8CF /* cpShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cpShape.h; sourceTree = "<group>"; };
+		E57331561B07617E0048D8CF /* cpSpace.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cpSpace.c; sourceTree = "<group>"; };
+		E57331571B07617E0048D8CF /* cpSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cpSpace.h; sourceTree = "<group>"; };
+		E57331581B07617E0048D8CF /* cpSpaceComponent.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cpSpaceComponent.c; sourceTree = "<group>"; };
+		E57331591B07617E0048D8CF /* cpSpaceHash.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cpSpaceHash.c; sourceTree = "<group>"; };
+		E573315A1B07617E0048D8CF /* cpSpaceQuery.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cpSpaceQuery.c; sourceTree = "<group>"; };
+		E573315B1B07617E0048D8CF /* cpSpaceStep.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cpSpaceStep.c; sourceTree = "<group>"; };
+		E573315C1B07617E0048D8CF /* cpSpatialIndex.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cpSpatialIndex.c; sourceTree = "<group>"; };
+		E573315D1B07617E0048D8CF /* cpSpatialIndex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cpSpatialIndex.h; sourceTree = "<group>"; };
+		E573315E1B07617E0048D8CF /* cpSweep1D.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cpSweep1D.c; sourceTree = "<group>"; };
+		E573315F1B07617E0048D8CF /* cpVect.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cpVect.c; sourceTree = "<group>"; };
+		E57331601B07617E0048D8CF /* cpVect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cpVect.h; sourceTree = "<group>"; };
+		E57331611B07617E0048D8CF /* prime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prime.h; sourceTree = "<group>"; };
+		E57331791B0778BF0048D8CF /* CBCannonBallController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBCannonBallController.h; sourceTree = "<group>"; };
+		E573317A1B0778BF0048D8CF /* CBCannonBallController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBCannonBallController.m; sourceTree = "<group>"; };
+		E573317C1B0778D70048D8CF /* CBCannonBallView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBCannonBallView.h; sourceTree = "<group>"; };
+		E573317D1B0778D70048D8CF /* CBCannonBallView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBCannonBallView.m; sourceTree = "<group>"; };
+		E57331801B09C8570048D8CF /* CBOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBOverlayView.h; sourceTree = "<group>"; };
+		E57331811B09C8570048D8CF /* CBOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBOverlayView.m; sourceTree = "<group>"; };
+		E57331861B0A404F0048D8CF /* CBPhysicalSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBPhysicalSpace.h; sourceTree = "<group>"; };
+		E57331871B0A404F0048D8CF /* CBPhysicalSpace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBPhysicalSpace.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E57330F21B07519C0048D8CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E573310B1B07519C0048D8CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E57330EC1B07519C0048D8CF = {
+			isa = PBXGroup;
+			children = (
+				E57330F71B07519C0048D8CF /* CannonBall */,
+				E57331111B07519C0048D8CF /* CannonBallTests */,
+				E57330F61B07519C0048D8CF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E57330F61B07519C0048D8CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E57330F51B07519C0048D8CF /* CannonBall.app */,
+				E573310E1B07519C0048D8CF /* CannonBallTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E57330F71B07519C0048D8CF /* CannonBall */ = {
+			isa = PBXGroup;
+			children = (
+				E57331331B07617E0048D8CF /* Chipmunk-iPhone */,
+				E57331241B075B4A0048D8CF /* View */,
+				E57331231B075B420048D8CF /* Controller */,
+				E57331221B075B3A0048D8CF /* Model */,
+				E57330FC1B07519C0048D8CF /* AppDelegate.h */,
+				E57330FD1B07519C0048D8CF /* AppDelegate.m */,
+				E57331021B07519C0048D8CF /* Main.storyboard */,
+				E57331051B07519C0048D8CF /* Images.xcassets */,
+				E57331071B07519C0048D8CF /* LaunchScreen.xib */,
+				E57330F81B07519C0048D8CF /* Supporting Files */,
+			);
+			path = CannonBall;
+			sourceTree = "<group>";
+		};
+		E57330F81B07519C0048D8CF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E57330F91B07519C0048D8CF /* Info.plist */,
+				E57330FA1B07519C0048D8CF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E57331111B07519C0048D8CF /* CannonBallTests */ = {
+			isa = PBXGroup;
+			children = (
+				E57331141B07519C0048D8CF /* CannonBallTests.m */,
+				E57331121B07519C0048D8CF /* Supporting Files */,
+			);
+			path = CannonBallTests;
+			sourceTree = "<group>";
+		};
+		E57331121B07519C0048D8CF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E57331131B07519C0048D8CF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E57331221B075B3A0048D8CF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E57331851B0A402E0048D8CF /* PhysicalSpace */,
+				E57331271B075C4B0048D8CF /* CannonBall */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E57331231B075B420048D8CF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E57331781B0778910048D8CF /* CannonBallController */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E57331241B075B4A0048D8CF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E573317F1B09C8360048D8CF /* OverlayView */,
+				E57331281B075C640048D8CF /* CannonBallView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E57331271B075C4B0048D8CF /* CannonBall */ = {
+			isa = PBXGroup;
+			children = (
+				E57331291B075E1D0048D8CF /* CBCannonBall.h */,
+				E573312A1B075E1D0048D8CF /* CBCannonBall.m */,
+			);
+			path = CannonBall;
+			sourceTree = "<group>";
+		};
+		E57331281B075C640048D8CF /* CannonBallView */ = {
+			isa = PBXGroup;
+			children = (
+				E573317C1B0778D70048D8CF /* CBCannonBallView.h */,
+				E573317D1B0778D70048D8CF /* CBCannonBallView.m */,
+			);
+			path = CannonBallView;
+			sourceTree = "<group>";
+		};
+		E57331331B07617E0048D8CF /* Chipmunk-iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				E57331341B07617E0048D8CF /* chipmunk.c */,
+				E57331351B07617E0048D8CF /* chipmunk.h */,
+				E57331361B07617E0048D8CF /* chipmunk_ffi.h */,
+				E57331371B07617E0048D8CF /* chipmunk_private.h */,
+				E57331381B07617E0048D8CF /* chipmunk_types.h */,
+				E57331391B07617E0048D8CF /* chipmunk_unsafe.h */,
+				E573313A1B07617E0048D8CF /* CMakeLists.txt */,
+				E573313B1B07617E0048D8CF /* constraints */,
+				E57331481B07617E0048D8CF /* cpArbiter.c */,
+				E57331491B07617E0048D8CF /* cpArbiter.h */,
+				E573314A1B07617E0048D8CF /* cpArray.c */,
+				E573314B1B07617E0048D8CF /* cpBB.c */,
+				E573314C1B07617E0048D8CF /* cpBB.h */,
+				E573314D1B07617E0048D8CF /* cpBBTree.c */,
+				E573314E1B07617E0048D8CF /* cpBody.c */,
+				E573314F1B07617E0048D8CF /* cpBody.h */,
+				E57331501B07617E0048D8CF /* cpCollision.c */,
+				E57331511B07617E0048D8CF /* cpHashSet.c */,
+				E57331521B07617E0048D8CF /* cpPolyShape.c */,
+				E57331531B07617E0048D8CF /* cpPolyShape.h */,
+				E57331541B07617E0048D8CF /* cpShape.c */,
+				E57331551B07617E0048D8CF /* cpShape.h */,
+				E57331561B07617E0048D8CF /* cpSpace.c */,
+				E57331571B07617E0048D8CF /* cpSpace.h */,
+				E57331581B07617E0048D8CF /* cpSpaceComponent.c */,
+				E57331591B07617E0048D8CF /* cpSpaceHash.c */,
+				E573315A1B07617E0048D8CF /* cpSpaceQuery.c */,
+				E573315B1B07617E0048D8CF /* cpSpaceStep.c */,
+				E573315C1B07617E0048D8CF /* cpSpatialIndex.c */,
+				E573315D1B07617E0048D8CF /* cpSpatialIndex.h */,
+				E573315E1B07617E0048D8CF /* cpSweep1D.c */,
+				E573315F1B07617E0048D8CF /* cpVect.c */,
+				E57331601B07617E0048D8CF /* cpVect.h */,
+				E57331611B07617E0048D8CF /* prime.h */,
+			);
+			path = "Chipmunk-iPhone";
+			sourceTree = "<group>";
+		};
+		E573313B1B07617E0048D8CF /* constraints */ = {
+			isa = PBXGroup;
+			children = (
+				E573313C1B07617E0048D8CF /* cpConstraint.h */,
+				E573313D1B07617E0048D8CF /* cpDampedRotarySpring.h */,
+				E573313E1B07617E0048D8CF /* cpDampedSpring.h */,
+				E573313F1B07617E0048D8CF /* cpGearJoint.h */,
+				E57331401B07617E0048D8CF /* cpGrooveJoint.h */,
+				E57331411B07617E0048D8CF /* cpPinJoint.h */,
+				E57331421B07617E0048D8CF /* cpPivotJoint.h */,
+				E57331431B07617E0048D8CF /* cpRatchetJoint.h */,
+				E57331441B07617E0048D8CF /* cpRotaryLimitJoint.h */,
+				E57331451B07617E0048D8CF /* cpSimpleMotor.h */,
+				E57331461B07617E0048D8CF /* cpSlideJoint.h */,
+				E57331471B07617E0048D8CF /* util.h */,
+			);
+			path = constraints;
+			sourceTree = "<group>";
+		};
+		E57331781B0778910048D8CF /* CannonBallController */ = {
+			isa = PBXGroup;
+			children = (
+				E57331791B0778BF0048D8CF /* CBCannonBallController.h */,
+				E573317A1B0778BF0048D8CF /* CBCannonBallController.m */,
+			);
+			path = CannonBallController;
+			sourceTree = "<group>";
+		};
+		E573317F1B09C8360048D8CF /* OverlayView */ = {
+			isa = PBXGroup;
+			children = (
+				E57331801B09C8570048D8CF /* CBOverlayView.h */,
+				E57331811B09C8570048D8CF /* CBOverlayView.m */,
+			);
+			path = OverlayView;
+			sourceTree = "<group>";
+		};
+		E57331851B0A402E0048D8CF /* PhysicalSpace */ = {
+			isa = PBXGroup;
+			children = (
+				E57331861B0A404F0048D8CF /* CBPhysicalSpace.h */,
+				E57331871B0A404F0048D8CF /* CBPhysicalSpace.m */,
+			);
+			path = PhysicalSpace;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E57330F41B07519C0048D8CF /* CannonBall */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E57331181B07519C0048D8CF /* Build configuration list for PBXNativeTarget "CannonBall" */;
+			buildPhases = (
+				E57330F11B07519C0048D8CF /* Sources */,
+				E57330F21B07519C0048D8CF /* Frameworks */,
+				E57330F31B07519C0048D8CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CannonBall;
+			productName = CannonBall;
+			productReference = E57330F51B07519C0048D8CF /* CannonBall.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E573310D1B07519C0048D8CF /* CannonBallTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E573311B1B07519C0048D8CF /* Build configuration list for PBXNativeTarget "CannonBallTests" */;
+			buildPhases = (
+				E573310A1B07519C0048D8CF /* Sources */,
+				E573310B1B07519C0048D8CF /* Frameworks */,
+				E573310C1B07519C0048D8CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E57331101B07519C0048D8CF /* PBXTargetDependency */,
+			);
+			name = CannonBallTests;
+			productName = CannonBallTests;
+			productReference = E573310E1B07519C0048D8CF /* CannonBallTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E57330ED1B07519C0048D8CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Sergei Smagleev";
+				TargetAttributes = {
+					E57330F41B07519C0048D8CF = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					E573310D1B07519C0048D8CF = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = E57330F41B07519C0048D8CF;
+					};
+				};
+			};
+			buildConfigurationList = E57330F01B07519C0048D8CF /* Build configuration list for PBXProject "CannonBall" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E57330EC1B07519C0048D8CF;
+			productRefGroup = E57330F61B07519C0048D8CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E57330F41B07519C0048D8CF /* CannonBall */,
+				E573310D1B07519C0048D8CF /* CannonBallTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E57330F31B07519C0048D8CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E57331631B07617E0048D8CF /* CMakeLists.txt in Resources */,
+				E57331041B07519C0048D8CF /* Main.storyboard in Resources */,
+				E57331091B07519C0048D8CF /* LaunchScreen.xib in Resources */,
+				E57331061B07519C0048D8CF /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E573310C1B07519C0048D8CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E57330F11B07519C0048D8CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E57331731B07617E0048D8CF /* cpSweep1D.c in Sources */,
+				E57330FE1B07519C0048D8CF /* AppDelegate.m in Sources */,
+				E57331701B07617E0048D8CF /* cpSpaceQuery.c in Sources */,
+				E573317B1B0778BF0048D8CF /* CBCannonBallController.m in Sources */,
+				E573316A1B07617E0048D8CF /* cpHashSet.c in Sources */,
+				E57331681B07617E0048D8CF /* cpBody.c in Sources */,
+				E57331721B07617E0048D8CF /* cpSpatialIndex.c in Sources */,
+				E57331621B07617E0048D8CF /* chipmunk.c in Sources */,
+				E57331821B09C8570048D8CF /* CBOverlayView.m in Sources */,
+				E573312B1B075E1D0048D8CF /* CBCannonBall.m in Sources */,
+				E57331651B07617E0048D8CF /* cpArray.c in Sources */,
+				E57331881B0A404F0048D8CF /* CBPhysicalSpace.m in Sources */,
+				E57331741B07617E0048D8CF /* cpVect.c in Sources */,
+				E57331671B07617E0048D8CF /* cpBBTree.c in Sources */,
+				E573316F1B07617E0048D8CF /* cpSpaceHash.c in Sources */,
+				E573316D1B07617E0048D8CF /* cpSpace.c in Sources */,
+				E57331661B07617E0048D8CF /* cpBB.c in Sources */,
+				E573316B1B07617E0048D8CF /* cpPolyShape.c in Sources */,
+				E57331691B07617E0048D8CF /* cpCollision.c in Sources */,
+				E573316C1B07617E0048D8CF /* cpShape.c in Sources */,
+				E57331641B07617E0048D8CF /* cpArbiter.c in Sources */,
+				E57331711B07617E0048D8CF /* cpSpaceStep.c in Sources */,
+				E573317E1B0778D70048D8CF /* CBCannonBallView.m in Sources */,
+				E573316E1B07617E0048D8CF /* cpSpaceComponent.c in Sources */,
+				E57330FB1B07519C0048D8CF /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E573310A1B07519C0048D8CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E57331151B07519C0048D8CF /* CannonBallTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E57331101B07519C0048D8CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E57330F41B07519C0048D8CF /* CannonBall */;
+			targetProxy = E573310F1B07519C0048D8CF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E57331021B07519C0048D8CF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E57331031B07519C0048D8CF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E57331071B07519C0048D8CF /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E57331081B07519C0048D8CF /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E57331161B07519C0048D8CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E57331171B07519C0048D8CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E57331191B07519C0048D8CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CannonBall/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E573311A1B07519C0048D8CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CannonBall/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E573311C1B07519C0048D8CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CannonBallTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CannonBall.app/CannonBall";
+			};
+			name = Debug;
+		};
+		E573311D1B07519C0048D8CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CannonBallTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CannonBall.app/CannonBall";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E57330F01B07519C0048D8CF /* Build configuration list for PBXProject "CannonBall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E57331161B07519C0048D8CF /* Debug */,
+				E57331171B07519C0048D8CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E57331181B07519C0048D8CF /* Build configuration list for PBXNativeTarget "CannonBall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E57331191B07519C0048D8CF /* Debug */,
+				E573311A1B07519C0048D8CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E573311B1B07519C0048D8CF /* Build configuration list for PBXNativeTarget "CannonBallTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E573311C1B07519C0048D8CF /* Debug */,
+				E573311D1B07519C0048D8CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E57330ED1B07519C0048D8CF /* Project object */;
+}
